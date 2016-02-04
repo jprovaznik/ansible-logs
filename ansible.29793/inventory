@@ -1,0 +1,16 @@
+# Create an OSEv3 group that contains the masters and nodes groups
+[OSv3:children]
+masters
+nodes
+etcd
+
+
+[masters]
+openshift-master-2ypgtc0s.example.com
+
+[etcd]
+openshift-master-2ypgtc0s.example.com
+
+[nodes]
+openshift-master-2ypgtc0s.example.com
+openshift-node-90kau633.example.com

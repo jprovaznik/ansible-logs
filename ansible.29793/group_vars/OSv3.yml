@@ -1,0 +1,12 @@
+ansible_ssh_user: cloud-user
+ansible_sudo: true
+deployment_type: openshift-enterprise # deployment type valid values are origin, online and openshif-enterprise
+osm_default_subdomain: cloudapps.example.com # default subdomain to use for exposed routes
+openshift_master_identity_providers:
+  - name: htpasswd_auth
+    login: true
+    challenge: true
+    kind: HTPasswdPasswordIdentityProvider
+    filename: /etc/origin/openshift-passwd
+openshift_use_openshift_sdn: true
+openshift_use_flannel: false

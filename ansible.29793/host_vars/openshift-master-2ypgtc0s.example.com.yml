@@ -1,0 +1,8 @@
+openshift_hostname: openshift-master-2ypgtc0s.example.com
+openshift_public_hostname: openshift-master-2ypgtc0s.example.com
+openshift_master_public_console_url: https://openshift-master-2ypgtc0s.example.com:8443/console
+openshift_master_public_api_url: https://openshift-master-2ypgtc0s.example.com:8443
+openshift_schedulable: true
+openshift_node_labels:
+  region: infra
+  zone: default
